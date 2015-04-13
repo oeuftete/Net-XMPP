@@ -27,6 +27,10 @@ my $build = Module::Build->new(
 		'Scalar::Util' => '0',
 	},
 
+	test_requires => {
+		'IO::Socket::SSL' => '0.81',
+	},
+
 	sign               => 1,
 	create_license     => 1,
 	create_makefile_pl => 'small',
